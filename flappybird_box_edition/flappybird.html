@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html> <!-- Define this as an HTML5 document -->
+<html lang="de"> <!-- Root element, language set to German -->
 <head>
-  <meta charset="UTF-8">
-  <title>Flappy Bird Box Edition</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 (supports all characters) -->
+  <title>Flappy Bird Box Edition</title> <!-- Page title shown in the browser tab -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file for styling -->
 </head>
+
 <body>
+  <!-- Start screen overlay -->
   <div id="startScreen">
-    <h1>Flappy Bird</h1>
-    <button id="startButton">Start</button>
+    <h1>Flappy Bird</h1> <!-- Game title -->
+    <button id="startButton">Start</button> <!-- Button to start the game -->
   </div>
 
+  <!-- Game over screen overlay (hidden at the beginning) -->
   <div id="gameOverScreen" style="display: none;">
-    <h1>Game Over!</h1>
-    <p id="finalScore">Score: 0</p>
-    <p id="highScore">Highscore: 0</p>
-    <button id="restartButton">Neustart</button>
+    <h1>Game Over!</h1> <!-- Heading when the player loses -->
+    <p id="finalScore">Score: 0</p> <!-- Shows the player's final score -->
+    <p id="highScore">Highscore: 0</p> <!-- Shows stored high score -->
+    <button id="restartButton">Neustart</button> <!-- Button to restart the game -->
   </div>
 
+  <!-- Score display at the top of the screen -->
   <div id="score">Score: 0</div>
+
+  <!-- The canvas where the game is drawn (bird, pipes, etc.) -->
   <canvas id="gameCanvas" width="400" height="600"></canvas>
 
+  <!-- Link to the JavaScript game logic -->
   <script src="script.js"></script>
 </body>
 </html>
